@@ -1,0 +1,21 @@
+﻿Webmin Error: The Web Server is running in SSL mode
+Read more: http://eitwebguru.com/webmin-error-the-web-server-is-running-in-ssl-mode/#ixzz4NK6S6MQU
+
+1. Login to Server via SSH
+
+2.Go to “/etc/webmin” directory
+
+3.Open miniserv.conf file in your Favorite editor. Miniserv.conf file contains configuration of Webmin Control Panel.
+
+4.Now Search for “ssl” and change from
+ssl=1
+TO
+ssl=0
+
+5.Restart webmin Service using 
+
+6.Now try to access Webmin using URL http://SERVER IP ADDRESS:10000/
+
+pwd
+cd /etc/webmin
+vi miniserv.conf
